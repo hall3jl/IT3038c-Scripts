@@ -3,6 +3,15 @@ import time
 start_time = time.time()
 print("What is your name?")
 myName = input()
+while myName != 'Justin':
+    if myName == 'your name':
+        print("Ha ha very funny... Seriously who are you?")
+        myName = input()
+    else:
+        print("You aren't 'Justin'. Please type in your name.")
+        myName = input()
+    
+    
 print("Hello, " + myName + ". That is a good name. How old are you?")
 myAge = int(input())
 if myAge < 13:
